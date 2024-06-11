@@ -128,6 +128,7 @@ section.info {
         color: #8F5C45;
         font-weight: 400;
         font-size: 35px;
+        margin-bottom: 20px;
 
         em {
             font-family: 'IvyMode', serif;
@@ -139,7 +140,8 @@ section.info {
         font-style: italic;
         color: #A1A1A1;
         font-size: 20px;
-        line-height: 25px;
+        line-height: 30px;
+        margin-bottom: 40px;
     }
 
 
@@ -153,6 +155,10 @@ section.info {
             width: fit-content;
             max-width: 200px;
             margin: 0 15px;
+
+            img {
+                max-width: 100%;
+            }
         }
 
         .download-btn {
@@ -176,11 +182,13 @@ section.info {
 @media (max-width: 1200px) {
     header {
         padding: 20px 20px;
+
+
     }
 
     .download-section {
         padding: 35px;
-        margin: 15px auto;
+        // margin: 15px auto;
         margin-bottom: 35px;
         width: 95%;
         flex-wrap: nowrap;
@@ -191,28 +199,36 @@ section.info {
     }
 
 
-    .info br {
-        display: none;
-    }
+
 }
 
 @media (max-width: 800px) {
     header {
-        padding: 15px;
+        padding: 25px;
 
         .logo-container img {
             width: 220px;
         }
+
+        .title-container {
+            display: none;
+        }
     }
 
     .download-section {
-        padding: 25px 15px;
-        margin: 15px;
-        margin-bottom: 35px;
+        padding: 35px 45px;
+        margin: 35px 20px;
         width: fit-content;
-        text-align: center;
         flex-wrap: wrap;
         justify-content: center;
+
+        div {
+            width: 100%;
+        }
+
+        h4 {
+            font-size: 18px;
+        }
 
         .download-container {
             margin-left: unset;
@@ -223,6 +239,17 @@ section.info {
 
             .download-option:first-of-type {
                 margin-bottom: 30px;
+            }
+
+            .download-option {
+                max-width: unset;
+                width: 100%;
+                margin-left: 0;
+                margin-right: 0;
+
+                img {
+                    width: 100%;
+                }
             }
         }
 
@@ -236,35 +263,50 @@ section.info {
     }
 
     section.main {
-        padding-top: 120px;
-        padding-bottom: 20px;
-        background-position: 75% 0%;
+        padding-top: 140px;
+        padding-bottom: 60px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-image: url('../img/bg_mobile.png');
+        background-position: center;
+        background-size: cover;
 
         .white-text {
             color: white;
             display: block;
             padding-bottom: unset;
-            padding-top: 20px;
+            padding-top: 40px;
             width: fit-content;
-            margin: auto;
-            padding-left: 0;
-            padding-right: 0;
-
-            p {
-                font-weight: 500;
-            }
+            padding-left: 12px;
+            padding-right: 12px;
         }
     }
 
     section.info {
-        padding-top: 30px;
+        padding-top: 40px;
         padding-bottom: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        p {
+            font-size: 18px;
+            line-height: 30px;
+        }
+
+        p.translation {
+            line-height: 26px;
+            font-size: 15px;
+        }
+
+        h3 {
+            font-size: 30px;
+        }
     }
 
     .white-bg {
         background-color: white;
         width: 100%;
-        padding: 25px 15px;
+        padding: 40px 30px;
         margin-bottom: 0px;
 
         h3 {
@@ -274,7 +316,24 @@ section.info {
             font-weight: 400;
             text-transform: uppercase;
             letter-spacing: 1px;
+            font-size: 11px;
         }
+
+        .title-svg-container {
+            svg {
+                height: 170px;
+                width: 190px;
+            }
+
+        }
+    }
+
+    p.text-align-center {
+        text-align: left;
+    }
+
+    .info br:not(.mobile-break) {
+        display: none;
     }
 }
 
