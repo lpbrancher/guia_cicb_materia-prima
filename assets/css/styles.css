@@ -12,11 +12,13 @@ body {
 p {
   color: white;
   font-family: "IvyEpic", sans-serif;
+  font-size: 18px;
 }
 
 p.translation {
   color: #4A3225;
   font-style: italic;
+  font-size: 16px;
 }
 
 p.text-align-center {
@@ -46,11 +48,11 @@ header h2 {
 .white-bg {
   background-color: white;
   width: fit-content;
-  padding: 45px 32px;
+  padding: 42px;
   margin-bottom: -34px;
 }
 .white-bg h3 {
-  font-size: 14px;
+  font-size: 13px;
   margin-top: 30px;
   margin-bottom: 0;
   color: #8F5C45;
@@ -98,14 +100,14 @@ section.info h3 {
 section.info h3 em {
   font-family: "IvyMode", serif;
 }
-
-.container {
-  max-width: 840px;
-  display: block;
-  margin: 0 auto;
+section.info h4.translation {
+  font-family: IvyEpic;
+  color: #4A3225;
+  font-style: italic;
+  font-size: 20px;
+  margin-top: 24px;
 }
-
-.download-section {
+section.info .download-section {
   background-color: white;
   margin: 40px auto;
   display: flex;
@@ -113,16 +115,16 @@ section.info h3 em {
   flex-wrap: wrap;
   padding: 50px;
 }
-.download-section h3 {
+section.info .download-section h3 {
   color: #8F5C45;
   font-weight: 400;
   font-size: 35px;
   margin-bottom: 20px;
 }
-.download-section h3 em {
+section.info .download-section h3 em {
   font-family: "IvyMode", serif;
 }
-.download-section h4 {
+section.info .download-section h4.translation {
   font-weight: 400;
   font-style: italic;
   color: #A1A1A1;
@@ -130,20 +132,20 @@ section.info h3 em {
   line-height: 30px;
   margin-bottom: 40px;
 }
-.download-section .download-container {
+section.info .download-section .download-container {
   display: flex;
   margin-right: 15px;
   flex-wrap: wrap;
 }
-.download-section .download-container .download-option {
+section.info .download-section .download-container .download-option {
   width: fit-content;
   max-width: 200px;
-  margin: 0 15px;
+  margin: 0 10px;
 }
-.download-section .download-container .download-option img {
+section.info .download-section .download-container .download-option img {
   max-width: 100%;
 }
-.download-section .download-container .download-btn {
+section.info .download-section .download-container .download-btn {
   background-color: #F9B800;
   width: 100%;
   display: block;
@@ -154,13 +156,22 @@ section.info h3 em {
   text-decoration: none;
   text-align: center;
 }
-.download-section .download-container .download-btn:hover {
+section.info .download-section .download-container .download-btn:hover {
   background-color: rgba(249, 184, 0, 0.7);
+}
+
+.container {
+  max-width: 840px;
+  display: block;
+  margin: 0 auto;
 }
 
 @media (max-width: 1200px) {
   header {
     padding: 20px 20px;
+  }
+  .white-bg h3 {
+    font-size: 13px;
   }
   .download-section {
     padding: 35px;
@@ -182,67 +193,72 @@ section.info h3 em {
   header .title-container {
     display: none;
   }
-  .download-section {
+  section.info .download-section {
     padding: 35px 45px;
-    margin: 35px 20px;
+    margin: 35px auto;
     width: fit-content;
     flex-wrap: wrap;
     justify-content: center;
   }
-  .download-section div {
+  section.info .download-section div {
     width: 100%;
   }
-  .download-section h4 {
+  section.info .download-section h4 {
     font-size: 18px;
   }
-  .download-section .download-container {
+  section.info .download-section .download-container {
     margin-left: unset;
     margin-right: unset;
     margin: 15px auto;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
   }
-  .download-section .download-container .download-option:first-of-type {
+  section.info .download-section .download-container .download-option:first-of-type {
     margin-bottom: 30px;
   }
-  .download-section .download-container .download-option {
-    max-width: unset;
+  section.info .download-section .download-container .download-option {
+    max-width: 292px;
     width: 100%;
     margin-left: 0;
     margin-right: 0;
   }
-  .download-section .download-container .download-option img {
+  section.info .download-section .download-container .download-option img {
     width: 100%;
   }
-  .download-section h3 {
+  section.info .download-section h3 {
     font-size: 30px;
   }
-  .download-section h3 em {
+  section.info .download-section h3 em {
     margin-right: 10px;
   }
   section.main {
     padding-top: 140px;
     padding-bottom: 60px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
     background-image: url("../img/bg_mobile.png");
     background-position: center;
     background-size: cover;
+  }
+  section.main .col-sm-12 {
+    padding-left: 0;
+    padding-right: 0;
   }
   section.main .white-text {
     color: white;
     display: block;
     padding-bottom: unset;
     padding-top: 40px;
-    width: fit-content;
-    padding-left: 12px;
-    padding-right: 12px;
+    width: 346px;
+    padding-left: 0;
+    padding-right: 0;
+    margin: auto;
   }
   section.info {
     padding-top: 40px;
     padding-bottom: 30px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   section.info p {
     font-size: 18px;
@@ -257,8 +273,9 @@ section.info h3 em {
   }
   .white-bg {
     background-color: white;
-    width: 100%;
-    padding: 40px 30px;
+    width: fit-content;
+    padding: 40px;
+    margin: auto;
     margin-bottom: 0px;
   }
   .white-bg h3 {
