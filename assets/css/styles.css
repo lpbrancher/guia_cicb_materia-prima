@@ -212,6 +212,7 @@ section.info .download-section .download-container .download-btn:hover {
     margin-right: unset;
     margin: 15px auto;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
   }
   section.info .download-section .download-container .download-option:first-of-type {
