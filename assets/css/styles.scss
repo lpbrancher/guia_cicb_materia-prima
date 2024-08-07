@@ -169,15 +169,30 @@ section.info {
                 background-color: #F9B800;
                 width: 100%;
                 display: block;
-                padding: 12px 25px 10px 25px;
+                padding: 12px 15px 10px 15px;
                 margin-top: 15px;
-                text-transform: uppercase;
                 color: #333;
                 text-decoration: none;
                 text-align: center;
+                font-size: 13px;
 
                 &:hover {
                     background-color: rgba(249, 184, 0, .7);
+                }
+            }
+
+            .download-btn-2 {
+                color: #F9B800;
+                background-color: #4A3225;
+                display: block;
+                text-decoration: none;
+                text-align: center;
+                font-size: 13px;
+                padding: 12px 15px 10px 15px;
+                margin-top: 20px;
+
+                &:hover {
+                    background-color: rgba(74, 50, 37, .8);
                 }
             }
         }
